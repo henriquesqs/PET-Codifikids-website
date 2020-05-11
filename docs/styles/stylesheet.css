@@ -2,11 +2,17 @@ nav {
     background-color: black;
     width: 100%;
     height: 10%;
+
 }
 
 nav .container {
     display: flex;
     flex-direction: row;
+}
+
+
+nav li{
+    font-size: 500px;;
 }
 
 footer {
