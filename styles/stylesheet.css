@@ -6,7 +6,7 @@ body {
 }
 
 /* ************************* */
-/*  Define styles for header */
+/*  Define styles for HEADER */
 /* ************************* */
 
 header {
@@ -15,9 +15,9 @@ header {
     height: 400px;
 }
 
-/* ******************************** */
-/*  Define styles for navigator bar */
-/* ******************************** */
+/* ********************************* */
+/*  Define styles for NAVIGATION BAR */
+/* ********************************* */
 
 nav {
     display: flex;
@@ -67,7 +67,9 @@ nav > .flex-container > .logo img {
     height: 94px;
 }
 
-/* Define styles for main */
+/* *********************** */
+/*  Define styles for MAIN */
+/* *********************** */
 
 main {
     background-color: aqua;
@@ -89,7 +91,9 @@ main .flex-container > div {
     /* background-color: #f1f1f1; */
 }
 
-/* Define style for footer */
+/* ************************** */
+/*  Define styles for FOOTER  */
+/* ************************** */
 footer {
     background-color: #f9f4a2;
     width: 100%;
@@ -109,6 +113,10 @@ footer img {
     height: 100px;
     width: 100px;
 }
+
+/* **************************************************** */
+/*  Define styles for SCREENS SMALLER THAN 1000 PIXELS  */
+/* **************************************************** */
 
 @media only screen and (max-width: 1000px) {
     html,
