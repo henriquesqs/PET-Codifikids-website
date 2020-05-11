@@ -46,6 +46,11 @@ li:hover {
     color: black;
 }
 
+nav .logo {
+    width: 120px;
+    height: 110px;
+}
+
 nav .logo > img {
     width: 120px;
     height: 110px;
@@ -104,22 +109,32 @@ footer > img {
 }
 
 @media only screen and (max-width: 1000px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
     header {
-        height: 150vh;
+        height: 500px;
     }
 
     nav {
-        height: 30vh;
+        display: flex;
+        width: 100%;
+        height: 90px;
     }
 
-    nav .logo > img {
-        width: 35vh;
-        height: 35vh;
-        margin-left: 2vh;
+    nav .flex-container > div {
+        flex-direction: row;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
     }
 
     nav a {
-        font-size: 20px;
         text-decoration: none;
         font-weight: bold;
         font-family: "Roboto", sans-serif;
@@ -127,20 +142,19 @@ footer > img {
         color: white;
     }
 
-    nav ul {
-        align-items: center;
-        justify-content: space-around;
-        margin-left: -50px;
-        font-size: 7vh;
+    nav .flex-container > ul {
+        font-size: 13px;
+        margin-left: 50px;
     }
 
-    .flex-container > div {
-        width: 25vw;
-        margin: 40px;
+    nav > .flex-container > .logo {
+        align-items: center;
+        width: 50px;
+        height: 50px;
     }
 
     main {
-        height: 800px;
+        height: 580px;
     }
 
     main .flex-container {
@@ -148,16 +162,16 @@ footer > img {
     }
 
     main .flex-container > div {
-        width: 200px;
+        width: 150px;
         margin: 10px;
     }
 
     footer {
-        height: 60vh;
+        height: 20vh;
     }
 
     footer > img {
-        height: 100px;
+        height: 80px;
         width: 15vw;
     }
 }
