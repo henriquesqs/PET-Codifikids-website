@@ -227,10 +227,10 @@ footer img {
 }
 
 /* *************************************************** */
-/*  Define styles for SCREENS SMALLER THAN 700 PIXELS  */
+/*  Define styles for SCREENS SMALLER THAN 700 PIXELS AND GREATER THAN 400 PIXELS  */
 /* *************************************************** */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 400px) and (max-width: 700px) {
     nav {
         display: flex;
         width: 100%;
@@ -241,17 +241,13 @@ footer img {
         height: 700px;
     }
 
-    nav .flex-container .logo {
-        margin-left: 20px;
-    }
-
     nav > .flex-container > .logo img {
-        width: 150px;
-        height: 154px;
+        width: 100px;
+        height: 104px;
     }
 
     nav ul {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     main {
@@ -264,7 +260,7 @@ footer img {
     }
 
     footer {
-        height: 180px;
+        height: 450px;
     }
 
     footer img {
