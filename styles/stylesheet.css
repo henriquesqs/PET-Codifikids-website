@@ -10,9 +10,28 @@ body {
 /* ************************* */
 
 header {
-    background-color: #f9f4a2;
+    /* background-color: #f9f4a2; */
+    background-color: white;
     width: 100%;
     height: 400px;
+}
+
+header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 45px;
+}
+
+header .cat {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    float: right;
+    width: 400px;
+    margin-right: 100px;
+    margin-top: 50px;
 }
 
 /* ********************************* */
@@ -23,12 +42,14 @@ nav {
     display: flex;
     width: 100%;
     height: 90px;
+    /* position: fixed; */
 }
 
 nav a {
     text-decoration: none;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
+    font-weight: 100;
     list-style-type: none;
     color: white;
 }
@@ -56,6 +77,7 @@ nav .flex-container {
     justify-content: space-evenly;
     align-items: center;
     background-color: DodgerBlue;
+    box-shadow: 0 0px 5px black;
 }
 
 nav .logo {
@@ -67,6 +89,10 @@ nav > .flex-container > .logo img {
     height: 94px;
 }
 
+/* nav > .flex-container > .logo img:hover{
+    background-color: black;
+} */
+
 /* *********************** */
 /*  Define styles for MAIN */
 /* *********************** */
@@ -77,7 +103,7 @@ main {
     height: 300px;
 }
 
-main .flex-container {
+main > .flex-container {
     flex-direction: row;
     display: flex;
     height: 100%;
@@ -86,9 +112,41 @@ main .flex-container {
     background-color: DodgerBlue;
 }
 
-main .flex-container > div {
+main > .flex-container > div.scratch-icon {
     width: 200px;
     /* background-color: #f1f1f1; */
+}
+
+main > .flex-container div.pet-icon > img {
+    width: 200px;
+    /* background-color: #f1f1f1; */
+    background-color: #fff;
+    border: 1px solid DodgerBlue;
+    /* height:100px; */
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+main > .flex-container div.about-icon {
+    width: 200px;
+    background-color: #12adf6;
+    border: 1px solid #12adf6;
+    color: white;
+    height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+    display: inline-block;
+    font-size: 60px;
+    line-height: 200px;
+    /* background-color:black; */
+    /* color:white; */
+    /* width: 50px; */
+    /* height: 50px; */
+    text-align: center;
+    vertical-align: bottom;
 }
 
 /* ************************** */
@@ -96,7 +154,7 @@ main .flex-container > div {
 /* ************************** */
 
 footer {
-    background-color: #f9f4a2;
+    background-color: white;
     width: 100%;
     height: 150px;
     font-family: "Roboto", sans-serif;
@@ -113,6 +171,7 @@ footer > .flex-container {
 footer img {
     height: 100px;
     width: 100px;
+    filter: grayscale(1);
 }
 
 /* *************************************************** */
@@ -284,6 +343,15 @@ footer img {
         height: 700px;
     }
 
+    header h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        float: left;
+        margin-top: 100px;
+        margin-left: 100px;
+        font-size: 60px;
+    }
+
     nav .flex-container .logo {
         margin-left: 40px;
     }
@@ -304,6 +372,43 @@ footer img {
     main .flex-container > div {
         width: 250px;
         margin: 10px;
+    }
+
+    main > .flex-container > div.scratch-icon {
+        width: 200px;
+        /* background-color: #f1f1f1; */
+    }
+
+    main > .flex-container div.pet-icon > img {
+        width: 200px;
+        /* background-color: #f1f1f1; */
+        background-color: #fff;
+        border: 1px solid DodgerBlue;
+        /* height:100px; */
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+
+    main > .flex-container div.about-icon {
+        width: 200px;
+        background-color: #12adf6;
+        border: 1px solid #12adf6;
+        color: white;
+        height: 200px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+
+        display: inline-block;
+        font-size: 60px;
+        line-height: 200px;
+        /* background-color:black; */
+        /* color:white; */
+        /* width: 50px; */
+        /* height: 50px; */
+        text-align: center;
+        vertical-align: bottom;
     }
 
     footer {
