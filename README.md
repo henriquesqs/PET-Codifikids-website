@@ -5,4 +5,4 @@ A simple responsive site created to use as a website for **PET Codifikids**. The
 Click on the link in this repository description ([or here](https://henriquesqs.github.io/petCodifikids-website/)) to see the site.
 
 #### Languages
-Pure CSS3 and HTML5
+Pure CSS3, HTML5 and javaScript.
