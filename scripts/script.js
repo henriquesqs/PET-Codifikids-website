@@ -20,6 +20,10 @@ function changeColorTheme() {
         x = document.getElementsByClassName("flex-container");
         x[0].style.backgroundColor = "black";
 
+        // Changing color os hover in nav bar
+        var sheet = window.document.styleSheets[0];
+        sheet.insertRule('li.navItem:hover { color: gray; }', sheet.cssRules.length);
+
         // Changing color of header
         x = document.getElementsByTagName("header");
         x[0].style.backgroundColor = "gray";
@@ -61,6 +65,10 @@ function changeColorTheme() {
         // Changing color of navigation bar
         x = document.getElementsByClassName("flex-container");
         x[0].style.backgroundColor = "DodgerBlue";
+
+        // Changing color os hover in nav bar
+        var sheet = window.document.styleSheets[0];
+        sheet.insertRule('li.navItem:hover { color: black; }', sheet.cssRules.length);
 
         // Changing color of header
         x = document.getElementsByTagName("header");
