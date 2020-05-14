@@ -238,6 +238,7 @@ footer img {
 
     main > .flex-container div.pet-icon > img {
         width: 100px;
+        height: 100px;
         background-color: #fff;
         border: 1px solid DodgerBlue;
         border-radius: 50%;
@@ -358,6 +359,7 @@ footer img {
 
     main > .flex-container div.pet-icon > img {
         width: 200px;
+        height: 200px;
         background-color: #fff;
         border: 1px solid DodgerBlue;
         border-radius: 50%;
@@ -478,6 +480,7 @@ footer img {
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
+        height: 250px;
         background-color: #fff;
         border: 1px solid DodgerBlue;
         border-radius: 50%;
@@ -592,6 +595,7 @@ footer img {
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
+        height: 250px;
         background-color: #fff;
         border: 1px solid DodgerBlue;
         border-radius: 50%;
@@ -707,6 +711,7 @@ footer img {
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
+        height: 250px;
         background-color: #fff;
         border: 1px solid DodgerBlue;
         border-radius: 50%;
