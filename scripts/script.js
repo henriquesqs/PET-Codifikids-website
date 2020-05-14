@@ -39,7 +39,7 @@ function changeColorTheme() {
 
         // Changing color of 'fas' class and the text of tooltip
         x = document.getElementsByClassName("fas");
-        x[0].style.filter = "invert(1%)";
+        x[0].style.filter = "invert(0%)";
         x[0].title = "Mudar para modo escuro";
 
         // Changing color of navigation bar
