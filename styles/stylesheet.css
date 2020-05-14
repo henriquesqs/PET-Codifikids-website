@@ -10,7 +10,6 @@ body {
 /* ************************* */
 
 header {
-    /* background-color: #f9f4a2; */
     background-color: white;
     width: 100%;
     height: 400px;
@@ -42,11 +41,9 @@ nav {
     display: flex;
     width: 100%;
     height: 90px;
-    /* position: fixed; */
 }
 
 nav a {
-    text-decoration: none;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -80,6 +77,10 @@ nav .flex-container {
     box-shadow: 0 0px 5px black;
 }
 
+nav .flex-container > ul > a{
+    text-decoration: none;
+}
+
 nav .logo {
     margin-left: 100px;
 }
@@ -88,10 +89,6 @@ nav > .flex-container > .logo img {
     width: 90px;
     height: 94px;
 }
-
-/* nav > .flex-container > .logo img:hover{
-    background-color: black;
-} */
 
 /* *********************** */
 /*  Define styles for MAIN */
@@ -114,15 +111,13 @@ main > .flex-container {
 
 main > .flex-container > div.scratch-icon {
     width: 200px;
-    /* background-color: #f1f1f1; */
 }
 
 main > .flex-container div.pet-icon > img {
     width: 200px;
-    /* background-color: #f1f1f1; */
     background-color: #fff;
     border: 1px solid DodgerBlue;
-    /* height:100px; */
+    height: 250px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -141,10 +136,6 @@ main > .flex-container div.about-icon {
     display: inline-block;
     font-size: 60px;
     line-height: 200px;
-    /* background-color:black; */
-    /* color:white; */
-    /* width: 50px; */
-    /* height: 50px; */
     text-align: center;
     vertical-align: bottom;
 }
@@ -178,7 +169,6 @@ footer img {
 @media only screen and (max-width: 600px) {
     nav .logo {
         margin-left: 5px;
-        /* margin: 0; */
     }
 
     nav ul {
@@ -189,7 +179,6 @@ footer img {
     nav > .flex-container > .logo img {
         width: 90px;
         height: 94px;
-        /* margin-right: -40px; */
     }
 
     header {
@@ -245,15 +234,12 @@ footer img {
 
     main > .flex-container > div.scratch-icon {
         width: 100px;
-        /* background-color: #f1f1f1; */
     }
 
     main > .flex-container div.pet-icon > img {
         width: 100px;
-        /* background-color: #f1f1f1; */
         background-color: #fff;
         border: 1px solid DodgerBlue;
-        /* height:100px; */
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -272,10 +258,6 @@ footer img {
         display: inline-block;
         font-size: 40px;
         line-height: 100px;
-        /* background-color:black; */
-        /* color:white; */
-        /* width: 50px; */
-        /* height: 50px; */
         text-align: center;
         vertical-align: bottom;
     }
@@ -309,7 +291,6 @@ footer img {
 @media only screen and (min-width: 768px) {
     nav .logo {
         margin-left: 30px;
-        /* margin: 0; */
     }
 
     nav ul {
@@ -320,7 +301,6 @@ footer img {
     nav > .flex-container > .logo img {
         width: 90px;
         height: 94px;
-        /* margin-right: -40px; */
     }
 
     header {
@@ -349,8 +329,6 @@ footer img {
         transform: scaleX(-1);
         width: 200px;
         height: 220px;
-        /* margin-right: 150px;
-        margin-left: 150px; */
         margin-top: 80px;
     }
 
@@ -376,15 +354,12 @@ footer img {
 
     main > .flex-container > div.scratch-icon {
         width: 200px;
-        /* background-color: #f1f1f1; */
     }
 
     main > .flex-container div.pet-icon > img {
         width: 200px;
-        /* background-color: #f1f1f1; */
         background-color: #fff;
         border: 1px solid DodgerBlue;
-        /* height:200px; */
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -403,10 +378,6 @@ footer img {
         display: inline-block;
         font-size: 80px;
         line-height: 200px;
-        /* background-color:black; */
-        /* color:white; */
-        /* width: 50px; */
-        /* height: 50px; */
         text-align: center;
         vertical-align: bottom;
     }
@@ -441,7 +412,6 @@ footer img {
     nav .logo {
         margin-left: 40px;
         margin-top: -20px;
-        /* margin: 0; */
     }
 
     nav ul {
@@ -452,7 +422,6 @@ footer img {
     nav > .flex-container > .logo img {
         width: 120px;
         height: 124px;
-        /* margin-right: -40px; */
     }
 
     header {
@@ -472,8 +441,6 @@ footer img {
 
     header div {
         display: flex;
-        /* width: 100px; */
-        /* height: 100px; */
     }
 
     header div > img.cat {
@@ -482,8 +449,6 @@ footer img {
         transform: scaleX(-1);
         width: 300px;
         height: 320px;
-        /* margin-right: 150px; */
-        /* margin-left: 50px; */
         margin-top: 80px;
     }
 
@@ -509,15 +474,12 @@ footer img {
 
     main > .flex-container > div.scratch-icon {
         width: 250px;
-        /* background-color: #f1f1f1; */
     }
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
-        /* background-color: #f1f1f1; */
         background-color: #fff;
         border: 1px solid DodgerBlue;
-        /* height:200px; */
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -564,7 +526,6 @@ footer img {
     nav .logo {
         margin-left: 100px;
         margin-top: -20px;
-        /* margin: 0; */
     }
 
     nav ul {
@@ -575,7 +536,6 @@ footer img {
     nav > .flex-container > .logo img {
         width: 120px;
         height: 124px;
-        /* margin-right: -40px; */
     }
 
     header {
@@ -595,8 +555,6 @@ footer img {
 
     header div {
         display: flex;
-        /* width: 100px; */
-        /* height: 100px; */
     }
 
     header div > img.cat {
@@ -605,8 +563,6 @@ footer img {
         transform: scaleX(-1);
         width: 300px;
         height: 320px;
-        /* margin-right: 150px; */
-        /* margin-left: 50px; */
         margin-top: 80px;
     }
 
@@ -632,15 +588,12 @@ footer img {
 
     main > .flex-container > div.scratch-icon {
         width: 250px;
-        /* background-color: #f1f1f1; */
     }
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
-        /* background-color: #f1f1f1; */
         background-color: #fff;
         border: 1px solid DodgerBlue;
-        /* height:200px; */
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -687,7 +640,6 @@ footer img {
     nav .logo {
         margin-left: 100px;
         margin-top: -80px;
-        /* margin: 0; */
     }
 
     nav ul {
@@ -698,7 +650,6 @@ footer img {
     nav > .flex-container > .logo img {
         width: 170px;
         height: 184px;
-        /* margin-right: -40px; */
     }
 
     header {
@@ -718,8 +669,6 @@ footer img {
 
     header div {
         display: flex;
-        /* width: 100px; */
-        /* height: 100px; */
     }
 
     header div > img.cat {
@@ -728,7 +677,6 @@ footer img {
         transform: scaleX(-1);
         width: 320px;
         height: 340px;
-        /* margin-right: 150px; */
         margin-left: 100px;
         margin-top: 100px;
     }
@@ -755,15 +703,12 @@ footer img {
 
     main > .flex-container > div.scratch-icon {
         width: 250px;
-        /* background-color: #f1f1f1; */
     }
 
     main > .flex-container div.pet-icon > img {
         width: 250px;
-        /* background-color: #f1f1f1; */
         background-color: #fff;
         border: 1px solid DodgerBlue;
-        /* height:200px; */
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;

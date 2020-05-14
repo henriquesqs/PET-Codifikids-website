@@ -10,8 +10,9 @@
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/widescreen.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width: 1000px)" href="styles/smallscreen.css"> -->
+
+    <!-- Js file -->
+    <script type="text/javascript" src="scripts/script.js"></script>
 
     <!-- Favicon image -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
@@ -20,7 +21,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/ced1c3619a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ced1c3619a.js" crossorigin="anonymous">
+    </script>
+
+    <!-- Bootstrap (I swear its just to use their beautiful tooltips) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+    <!-- Initializing tooltips everywhere -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </head>
 
@@ -29,24 +51,30 @@
     <header>
         <nav>
             <div class="flex-container">
+
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/PetNOBG.png" alt="Imagem da logo do PET">
                     </a>
                 </div>
+
                 <ul>
-                    <a href="index.html">
+                    <a href="index.html" style="text-decoration: none;">
                         <li>Início</li>
                     </a>
-                    <a href="#">
+                    <a href="#" style="text-decoration: none;">
                         <li>Sobre</li>
                     </a>
-                    <a href="#">
+                    <a href="#" style="text-decoration: none;">
                         <li>Contato</li>
                     </a>
-                    <a href="#">
+                    <a href="#" style="text-decoration: none;">
                         <li>Membros</li>
                     </a>
+                    <li style="list-style-type: none; cursor: pointer;" onclick="changeColorTheme()">
+                        <i class="fas fa-adjust" title="Mudar para modo escuro">
+                        </i>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -54,7 +82,7 @@
         <h1>Vamos conhecer o PET Codifikids?<br>
             Role a página e aprenda sobre o projeto!
         </h1>
-        
+
         <div>
             <img class="cat" src="images/scratchCat.png">
         </div>
@@ -63,10 +91,10 @@
     <main>
         <div class="flex-container">
             <div class="scratch-icon">
-                <img src="images/scratch.svg" alt="Imagem da logo do aplicativo Scratch">
+                <img src="images/scratch.svg" class="scratch-iconImg" alt="Imagem da logo do aplicativo Scratch">
             </div>
             <div class="pet-icon">
-                <img src="images/pet.jpg" alt="Imagem da logo do aplicativo Scratch">
+                <img src="images/pet.svg" class="pet-iconImg" alt="Imagem da logo do aplicativo Scratch">
             </div>
             <div class="about-icon">
                 <center><i class="fas fa-question">
