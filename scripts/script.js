@@ -5,9 +5,9 @@ function changeColorTheme() {
     
     var x;
 
-    if (switched == 0) { // its default mode
+    if (switched == 0) { // its in default mode
 
-        // Change html color
+        // Changing html color
         x = document.getElementsByTagName("html");
         x[0].style.backgroundColor = "gray";
 
@@ -47,9 +47,9 @@ function changeColorTheme() {
         switched = 1;
     }
 
-    else { // its dark mode
+    else { // its in dark mode
 
-        // Change html color
+        // Changing html color
         x = document.getElementsByTagName("html");
         x[0].style.backgroundColor = "white";
 
