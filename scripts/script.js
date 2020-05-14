@@ -7,6 +7,10 @@ function changeColorTheme() {
 
     if (switched == 0) { // its default mode
 
+        // Change html color
+        x = document.getElementsByTagName("html");
+        x[0].style.backgroundColor = "gray";
+
         // Changing color of 'fas' class and the text of tooltip
         x = document.getElementsByClassName("fas");
         x[0].style.filter = "invert(100%)";
@@ -15,6 +19,10 @@ function changeColorTheme() {
         // Changing color of navigation bar
         x = document.getElementsByClassName("flex-container");
         x[0].style.backgroundColor = "black";
+
+        // Changing color of header
+        x = document.getElementsByTagName("header");
+        x[0].style.backgroundColor = "gray";
 
         // Changing color of main
         x = document.getElementsByClassName("flex-container");
@@ -32,10 +40,18 @@ function changeColorTheme() {
         x[0].style.backgroundColor = "#0c3e51";
         x[0].style.border = "1px solid #0c3e51";
 
+        // Change footer color
+        x = document.getElementsByTagName("footer");
+        x[0].style.backgroundColor = "gray";
+
         switched = 1;
     }
 
     else { // its dark mode
+
+        // Change html color
+        x = document.getElementsByTagName("html");
+        x[0].style.backgroundColor = "white";
 
         // Changing color of 'fas' class and the text of tooltip
         x = document.getElementsByClassName("fas");
@@ -45,6 +61,10 @@ function changeColorTheme() {
         // Changing color of navigation bar
         x = document.getElementsByClassName("flex-container");
         x[0].style.backgroundColor = "DodgerBlue";
+
+        // Changing color of header
+        x = document.getElementsByTagName("header");
+        x[0].style.backgroundColor = "white";
 
         // Changing color of main
         x = document.getElementsByClassName("flex-container");
@@ -62,6 +82,10 @@ function changeColorTheme() {
         x = document.getElementsByClassName("about-icon");
         x[0].style.backgroundColor = "#12adf6";
         x[0].style.border = "1px solid #12adf6";
+
+        // Change footer color
+        x = document.getElementsByTagName("footer");
+        x[0].style.backgroundColor = "white";
 
         switched = 0;
     }
