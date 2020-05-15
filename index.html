@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="description" content="PET Codifikids: levando o básico da programação para as crianças.">
     <meta name="author" content="@henriquesqs">
-    <title>PET: CodifiKids</title>
+    <title>CodifiKids: Index</title>
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body class="fade">
 
     <header>
         <nav>
@@ -49,14 +49,23 @@
                     <a href="#" style="text-decoration: none;">
                         <li class="navItem">Membros</li>
                     </a>
-                    <a href="#" id="login" style="text-decoration: none;">
+                    <a href="login.html" id="login" style="text-decoration: none;">
                         <li class="navItem">Login</li>
                     </a>
+
                     <!-- Creating a button to switch between dark and light mode -->
                     <li style="list-style-type: none; cursor: pointer;" onclick="changeColorTheme()">
                         <i class="fas fa-adjust" title="Mudar para modo escuro">
                         </i>
                     </li>
+
+                    <!-- Creating a button to show only to logged users -->
+                    <!-- <li style="list-style-type: none; cursor: pointer;" id="loggedOnly">
+                        <i class="fas fa-user-shield">
+                            
+                        </i>
+                    </li> -->
+                    
                 </ul>
             </div>
         </nav>

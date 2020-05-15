@@ -2,7 +2,7 @@ var switched = 0; // global variable to control the switch between dark and ligh
 
 // Function to change the color theme of index.html
 function changeColorTheme() {
-    
+
     var x;
 
     if (switched == 0) { // its in default mode
@@ -96,5 +96,16 @@ function changeColorTheme() {
         x[0].style.backgroundColor = "white";
 
         switched = 0;
+    }
+}
+
+function login() {
+
+    // Parsing URL parameters
+    var mail = document.getElementById('email').value;
+    var pass = document.getElementById('password').value;
+    
+    if (pass == "admin" && mail == "admin@admin.com") {
+        alert("Boas-vindas! :D");
     }
 }
