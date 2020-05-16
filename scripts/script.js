@@ -130,8 +130,11 @@ function afterLogin() {
 
     // Checking if URL has the params we need
     if (params.has("email") && params.has("password")) { // it means that user has logged
-        var mail = params.get("email");
-        var pass = params.get("password");
-        document.getElementById("loggedOnly").removeAttribute("hidden");
+        
+        var mail = params.get("email"); // gets email value
+        var pass = params.get("password"); // gets password value
+
+        document.getElementById("loggedOnly").removeAttribute("hidden"); // show icon to logged user only
+        document.getElementById("login").setAttribute("hidden", true); // remove login link from nav bar
     }
 }
