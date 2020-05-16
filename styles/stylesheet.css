@@ -9,7 +9,7 @@ body.login {
     overflow-y: hidden;
 }
 
-/* Adds fade animation on loading page */
+/* Adds fade animation on loading index page */
 body.fade {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
