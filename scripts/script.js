@@ -111,14 +111,14 @@ function login() {
     var mail = document.getElementById('email').value;
     var pass = document.getElementById('password').value;
 
-    if(!pass && !mail);
+    if (!pass && !mail);
 
     else if (pass == "admin" && mail == "admin@admin.com") {
         alert("Boas-vindas! :D");
     }
     else
         alert("Sem permissão para entrar no sistema...");
-    
+
 
 
 }
@@ -130,11 +130,13 @@ function afterLogin() {
 
     // Checking if URL has the params we need
     if (params.has("email") && params.has("password")) { // it means that user has logged
-        
+
         var mail = params.get("email"); // gets email value
         var pass = params.get("password"); // gets password value
 
-        document.getElementById("loggedOnly").removeAttribute("hidden"); // show icon to logged user only
-        document.getElementById("login").setAttribute("hidden", true); // remove login link from nav bar
+        if (mail == "admin@admin.com" && pass == "admin") { // checks if mail and pass matches admin login
+            document.getElementById("loggedOnly").removeAttribute("hidden"); // show icon to logged user only
+            document.getElementById("login").setAttribute("hidden", true); // remove login link from nav bar
+        }
     }
 }
