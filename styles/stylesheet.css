@@ -270,11 +270,6 @@ input:focus {
         padding: 0;
     }
 
-    nav > .flex-container > .logo img {
-        /* width: 70px;
-        height: 74px; */
-    }
-
     header {
         height: 500px;
     }
@@ -582,11 +577,6 @@ input:focus {
     nav ul {
         font-size: 20px;
         padding: 0;
-    }
-
-    nav > .flex-container > .logo img {
-        /* width: 90px;
-        height: 94px; */
     }
 
     header {
