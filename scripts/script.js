@@ -16,6 +16,9 @@ function changeColorTheme() {
         x[0].style.filter = "invert(100%)";
         x[0].title = "Mudar para modo claro";
 
+        // Changing color of loggedOnly icon
+        x = document.getElementById("loggedOnly").style.filter = "invert(100%)";
+
         // Changing color of navigation bar
         x = document.getElementsByClassName("flex-container");
         x[0].style.backgroundColor = "black";
@@ -61,6 +64,9 @@ function changeColorTheme() {
         x = document.getElementsByClassName("fas");
         x[0].style.filter = "invert(0%)";
         x[0].title = "Mudar para modo escuro";
+
+        // Changing color of loggedOnly icon
+        x = document.getElementById("loggedOnly").style.filter = "invert(0%)";
 
         // Changing color of navigation bar
         x = document.getElementsByClassName("flex-container");
