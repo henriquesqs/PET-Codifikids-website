@@ -105,21 +105,25 @@ function login() {
     var mail = document.getElementById('email').value;
     var pass = document.getElementById('password').value;
 
-    if (pass == "admin" && mail == "admin@admin.com") {        
+    if(!pass && !mail);
+
+    else if (pass == "admin" && mail == "admin@admin.com") {
         alert("Boas-vindas! :D");
     }
-    else {
+    else
         alert("Sem permissão para entrar no sistema...");
-    }
+    
+
+
 }
 
 function afterLogin() {
-    
+
     // Getting URL parameters
     const params = new URLSearchParams(window.location.search);
-    
+
     // Checking if URL has the params we need
-    if(params.has("email") && params.has("password")){ // it means that user has logged
+    if (params.has("email") && params.has("password")) { // it means that user has logged
         var mail = params.get("email");
         var pass = params.get("password");
         document.getElementById("loggedOnly").removeAttribute("hidden");
