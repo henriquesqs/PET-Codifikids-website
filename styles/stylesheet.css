@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+body.login {
+    overflow-y: hidden;
+}
+
 /* Adds fade animation on loading page */
 body.fade {
     animation: fadeInAnimation ease 2s;
@@ -185,6 +189,10 @@ footer img {
 /*  Define styles for LOGIN PAGE  */
 /* ****************************** */
 
+div.logo-login {
+    margin: 40px 0px 50px 630px;
+}
+
 div.login-box {
     width: 300px;
     height: 300px;
@@ -363,6 +371,86 @@ input:focus {
         height: 100px;
         width: 100px;
     }
+
+    div.login-box {
+        width: 290px;
+        height: 280px;
+        margin-left: 10px;
+        padding: 20px 30px 40px 20px;
+    }
+
+    div.logo-login {
+        margin: 40px 0px 50px 130px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    div.login-box {
+        width: 240px;
+        height: 260px;
+        margin-left: 15px;
+        padding: 20px 30px 40px 20px;
+    }
+
+    div.logo-login {
+        margin: 40px 0px 50px 115px;
+    }
+
+    div.login-box > div.login-text {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    div.login-box label {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 13px;
+    }
+
+    div.login-box button {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: grey;
+        background-color: white;
+        width: 90px;
+        height: 40px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 2px solid gray;
+        border-radius: 2px;
+    }
+
+    input {
+        width: 250px;
+        padding: 12px 20px;
+        margin: 8px 0 10px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        border: 3px solid gainsboro;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        color: #555;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    div.login-box {
+        width: 330px;
+        height: 300px;
+        margin-left: 15px;
+        padding: 20px 30px 40px 20px;
+    }
+
+    div.logo-login {
+        margin: 40px 0px 50px 160px;
+    }
 }
 
 /* Define styles for Small devices (portrait tablets and large phones, 600px and up) */
@@ -371,6 +459,10 @@ input:focus {
 
 /* Define styles for Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    body.login {
+        overflow-y: auto;
+    }
+
     nav .logo {
         margin-left: 30px;
     }
@@ -484,10 +576,88 @@ input:focus {
         height: 100px;
         width: 100px;
     }
+
+    div.logo-login {
+        margin: 40px 0px 50px 350px;
+    }
+
+    div.login-box {
+        width: 500px;
+        height: 500px;
+        background-color: cadetblue;
+        margin-left: 100px;
+        padding: 30px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.login-box > div.login-text {
+        font-size: 50px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    div.login-box label {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 30px;
+    }
+
+    i#passInput {
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+    i#mailInput {
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+    div.login-box button {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: grey;
+        background-color: white;
+        width: 150px;
+        height: 50px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 2px solid gray;
+        border-radius: 2px;
+        font-size: 20px;
+    }
+
+    div.login-box button:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    input {
+        width: 500px;
+        height: 70px;
+        padding: 12px 20px;
+        margin: 8px 0 20px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        border: 3px solid gainsboro;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        color: #555;
+        font-size: 20px;
+    }
 }
 
 /* Define styles for Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    body.login {
+        overflow-y: auto;
+    }
+
     nav {
         height: 200px;
     }
@@ -598,6 +768,75 @@ input:focus {
         height: 100px;
         width: 100px;
         margin-top: 30px;
+    }
+
+    div.logo-login {
+        margin: 40px 0px 50px 480px;
+    }
+
+    div.login-box {
+        width: 800px;
+        height: 800px;
+        background-color: cadetblue;
+        margin-left: 80px;
+        padding: 30px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.login-box > div.login-text {
+        font-size: 70px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    div.login-box label {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 50px;
+    }
+
+    i#passInput {
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    i#mailInput {
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    div.login-box button {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: grey;
+        background-color: white;
+        width: 250px;
+        height: 80px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 2px solid gray;
+        border-radius: 2px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 800px;
+        height: 90px;
+        padding: 12px 20px;
+        margin: 8px 0 50px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        border: 3px solid gainsboro;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        color: #555;
+        font-size: 30px;
     }
 }
 
@@ -829,5 +1068,74 @@ input:focus {
         height: 150px;
         width: 150px;
         margin-top: 30px;
+    }
+
+    div.logo-login {
+        margin: 40px 0px 50px 880px;
+    }
+
+    div.login-box {
+        width: 800px;
+        height: 800px;
+        background-color: cadetblue;
+        margin-left: 500px;
+        padding: 30px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    div.login-box > div.login-text {
+        font-size: 70px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    div.login-box label {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 50px;
+    }
+
+    i#passInput {
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    i#mailInput {
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    div.login-box button {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: grey;
+        background-color: white;
+        width: 250px;
+        height: 80px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 2px solid gray;
+        border-radius: 2px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 800px;
+        height: 90px;
+        padding: 12px 20px;
+        margin: 8px 0 50px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        border: 3px solid gainsboro;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        color: #555;
+        font-size: 30px;
     }
 }

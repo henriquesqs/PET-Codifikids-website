@@ -26,8 +26,8 @@
 
 </head>
 
-<body style="background-color: dodgerblue; overflow-y: hidden;">
-    <div class="logo" style="margin: 40px 0px 50px 630px;">
+<body class="login" style="background-color: dodgerblue;">
+    <div class="logo-login">
         <a href="index.html">
             <img src="images/PetNOBG.png" alt="Imagem da logo do PET" style="height: 100px; width: 100px;">
         </a>
@@ -39,18 +39,18 @@
         <form id="loginform" name="form" class="login" action="." method="GET" autocomplete="off">
 
             <!-- E-mail input field -->
-            <i class="fas fa-envelope" style="color: white;"></i>
+            <i id="mailInput" class="fas fa-envelope" style="color: white;"></i>
             <label for="email">E-MAIL</label><br>
             <input required oninvalid="this.setCustomValidity('Oi amore, insira seu email :D')"
-                oninput="this.setCustomValidity('')" type="email" title="Preencha esse campo, por favor! :)" id="email" name="email"
-                placeholder="zekinhabiribinha@zikadobaile.com"><br>
+                oninput="this.setCustomValidity('')" type="email" title="Preencha esse campo, por favor! :)" id="email"
+                name="email" placeholder="zekinhabiribinha@zikadobaile.com"><br>
 
             <!-- Password input field -->
-            <i class="fas fa-key" style="color: white;"></i>
+            <i id="passInput" class="fas fa-key" style="color: white;"></i>
             <label for="password">SENHA</label><br>
             <input required oninvalid="this.setCustomValidity('Oi amore, insira sua senha :D')"
-                oninput="this.setCustomValidity('')" type="password" title="Preencha esse campo, por favor! :)" id="password" name="password"
-                placeholder="***********"><br>
+                oninput="this.setCustomValidity('')" type="password" title="Preencha esse campo, por favor! :)"
+                id="password" name="password" placeholder="***********"><br>
 
             <!-- Login button -->
             <button class="login" type="submit" style="margin-top: 20px;" onclick="login();">LOGAR</button>
