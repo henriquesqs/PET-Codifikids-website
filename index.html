@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="fade">
+<body class="fade" onload="afterLogin();">
 
     <header>
         <nav>
@@ -39,7 +39,7 @@
                 </div>
 
                 <!-- Unordered list of options in nav bar -->
-                <ul>                    
+                <ul>
                     <a href="#" style="text-decoration: none;">
                         <li class="navItem">Sobre</li>
                     </a>
@@ -60,12 +60,11 @@
                     </li>
 
                     <!-- Creating a button to show only to logged users -->
-                    <!-- <li style="list-style-type: none; cursor: pointer;" id="loggedOnly">
+                    <li id="loggedOnly" hidden style="list-style-type: none; cursor: pointer;">
                         <i class="fas fa-user-shield">
-                            
                         </i>
-                    </li> -->
-                    
+                    </li>
+
                 </ul>
             </div>
         </nav>

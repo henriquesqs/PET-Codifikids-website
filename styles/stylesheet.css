@@ -248,17 +248,18 @@ input:focus {
 /* Define styles for Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     nav .logo {
-        margin-left: 5px;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
     nav ul {
-        font-size: 15px;
+        font-size: 13px;
         padding: 0;
     }
 
     nav > .flex-container > .logo img {
-        width: 90px;
-        height: 94px;
+        width: 70px;
+        height: 74px;
     }
 
     header {
