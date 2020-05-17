@@ -114,6 +114,7 @@ function login() {
     if (!pass && !mail);
 
     else if (pass == "admin" && mail == "admin@admin.com") {
+        document.getElementById("loginform").setAttribute("action", ".");
         alert("Boas-vindas! :D");
     }
     else
@@ -136,7 +137,8 @@ function afterLogin() {
 
         if (mail == "admin@admin.com" && pass == "admin") { // checks if mail and pass matches admin login
             document.getElementById("loggedOnly").removeAttribute("hidden"); // show icon to logged user only
-            document.getElementById("login").setAttribute("hidden", true); // remove login link from nav bar
+            document.getElementById("login").setAttribute("hidden", true); // remove login link from nav bar    
+            document.getElementById("loginlink").setAttribute("href", window.location.href); // changing login link        
         }
     }
 }
